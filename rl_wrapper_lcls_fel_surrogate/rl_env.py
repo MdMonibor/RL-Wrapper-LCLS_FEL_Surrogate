@@ -34,6 +34,7 @@ class LTUHEnv(gym.Env):
         self.target_power = target_power
         self.step_scale = step_scale
         self.max_steps = max_steps
+        self._max_episode_steps = max_steps
         self.n = len(quad_names)
 
         self.normal_noise_std = normal_noise_std
